@@ -8,22 +8,20 @@
 </head>
 <body>
   <div class="container">
-    <h1>Steganography Toolkit</h1>
+    <h1>Steganography Tool</h1>
     
-    <!-- Common Image Section -->
-    <div class="image-section">
-      <label for="imageUpload" class="upload-label">Upload Image</label>
-      <input type="file" id="imageUpload" accept="image/png" hidden />
-      <div class="image-preview">
-        <img id="imagePreview" src="" alt="Image Preview" />
-      </div>
-    </div>
-
-    <!-- Two Panels: Encrypt and Decrypt -->
     <div class="panels">
       <!-- Encryption Panel -->
       <div class="panel encrypt-panel">
         <h2>Encrypt (Encode)</h2>
+        
+        <!-- Upload Image for Encryption -->
+        <label for="imageUploadEncrypt" class="upload-label">Upload Image</label>
+        <input type="file" id="imageUploadEncrypt" accept="image/png, image/jpeg, image/jpg" hidden />
+        <div class="image-preview">
+          <img id="imagePreviewEncrypt" src="" alt="Image Preview" />
+        </div>
+        
         <textarea id="textInput" placeholder="Enter text to encode..."></textarea>
         <input type="password" id="passkey" placeholder="Enter passkey (optional)" />
         <button onclick="encodeText()" class="btn">Encode Text</button>
@@ -32,10 +30,20 @@
       <!-- Decryption Panel -->
       <div class="panel decrypt-panel">
         <h2>Decrypt (Decode)</h2>
+
+        <!-- Upload Image for Decryption -->
+        <label for="imageUploadDecrypt" class="upload-label">Upload Image</label>
+        <input type="file" id="imageUploadDecrypt" accept="image/png, image/jpeg, image/jpg" hidden />
+        <div class="image-preview">
+          <img id="imagePreviewDecrypt" src="" alt="Image Preview" />
+        </div>
+
         <input type="password" id="passkey-decrypt" placeholder="Enter passkey (if required)" />
         <button onclick="decodeText()" class="btn">Decode Text</button>
         <textarea id="decodedText" readonly placeholder="Decoded text will appear here..."></textarea>
       </div>
+
+      
     </div>
   </div>
   <script defer src="script.js"></script>

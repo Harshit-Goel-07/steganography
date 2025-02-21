@@ -1,110 +1,117 @@
-/* Modern UI Styling */
+/* Modern Interactive UI Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Inter:wght@300;400;700&display=swap');
+
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 800px; /* Increased width to fit two panels side by side */
-    margin: 50px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .image-section {
-    margin-bottom: 20px;
-  }
-  
-  .upload-label {
-    display: block;
-    padding: 10px 20px;
-    background: #ff9800;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .upload-label:hover {
-    background: #e68900;
-  }
-  
-  .image-preview {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .image-preview img {
-    max-width: 100%;
-    max-height: 200px;
-    border-radius: 10px;
-    border: 2px solid white;
-  }
-  
-  textarea,
-  input {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  textarea {
-    height: 100px;
-    resize: none;
-  }
-  
-  .panels {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .panel {
-    flex: 1;
-    margin: 10px;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 10px;
-    min-width: 300px;
-  }
-  
-  .panel h2 {
-    margin-top: 0;
-    font-size: 20px;
-  }
-  
-  .btn {
-    background: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .btn:hover {
-    background: #388e3c;
-  }
-  
-  #decodedText {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    height: 80px;
-  }
-  
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #6a85b6, #bac8e0);
+  color: #222;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.panels {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.panel {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  min-width: 320px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.panel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image-preview {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 220px;
+  border-radius: 12px;
+  border: 2px solid #fff;
+}
+
+.upload-label {
+  display: block;
+  padding: 12px 24px;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: 500;
+}
+
+.upload-label:hover {
+  background: #0056b3;
+}
+
+textarea,
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+textarea {
+  height: 110px;
+  resize: none;
+}
+
+.btn {
+  background: #28a745;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+#decodedText {
+  background: rgba(255, 255, 255, 0.3);
+  color: #222;
+  height: 85px;
+}
+
