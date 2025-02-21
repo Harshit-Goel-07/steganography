@@ -33,7 +33,8 @@ GitHub - Version control
 #How to Run the Project
 
 -Clone the repository: -->
-git clone https://github.com/your-username/image-steganography.git -->
+git clone https://github.com/Harshit-Goel-07/steganography.git
+-->
 cd image-steganography
 
 -Install dependencies:
