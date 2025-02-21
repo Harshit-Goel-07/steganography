@@ -1,60 +1,65 @@
-**Image Steganography Tool**
+# Image Steganography Tool
 
-#Overview
-This project is a web-based image steganography tool that allows users to hide and extract secret messages within images. It provides a simple and secure way to encode confidential text inside an image without noticeable changes.
+## Overview
+This project is an **Image Steganography Tool** that allows users to **hide and retrieve secret messages within images**. Using Python for the backend and HTML, CSS, and JavaScript for the frontend, the tool provides a secure way to conceal information inside image pixels without visible changes.
 
+## Features
+- **Hide Messages** – Encode text within an image without altering its appearance.
+- **Extract Messages** – Retrieve the hidden text from a steganographic image.
+- **User-Friendly Interface** – A simple web-based frontend for ease of use.
+- **Secure Communication** – Enhances privacy by making messages invisible to unauthorized users.
 
-#Features
+## Technologies Used
+### **Programming Language**
+- Python – For implementing the steganography logic.
 
--Encode messages into images without altering their appearance
--Decode hidden messages from steganographic images
--User-friendly interface using HTML, CSS, and JavaScript
--Python-powered backend for encoding and decoding messages
+### **Libraries & Frameworks**
+- OpenCV – Image processing.
+- NumPy – Handling image data.
+- PIL (Pillow) – Image manipulation.
 
+### **Frontend**
+- HTML, CSS, JavaScript – For building a responsive web interface.
 
-#Technologies Used
+### **Platforms & Tools**
+- VS Code / PyCharm – For coding and testing.
+- GitHub – Version control and project management.
 
--Frontend:
-HTML, CSS, JavaScript
+## Installation & Usage
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/your-username/image-steganography-tool.git
+cd image-steganography-tool
+```
 
--Backend:
-Python
-
--Libraries:
-OpenCV- Image processing
-NumPy- Handling image arrays
-PIL (Pillow)- Working with images
-
--Tools & Platforms:
-VS Code- Development
-GitHub- Version control
-
-
-#How to Run the Project
-
--Clone the repository: -->
-git clone https://github.com/Harshit-Goel-07/steganography.git
--->
-cd image-steganography
-
--Install dependencies:
+### **2. Install Dependencies**
+Ensure you have Python installed, then install required libraries:
+```bash
 pip install opencv-python numpy pillow
+```
 
--Run the Python script:
+### **3. Run the Backend**
+```bash
 python app.py
+```
 
--Open the frontend in a browser and start encoding or decoding.
+### **4. Open Frontend**
+Open `index.html` in a web browser to interact with the tool.
 
+## Screenshots
+| Hide Message | Extract Message | Output Image |
+|-------------|---------------|-------------|
+| ![Hide](screenshots/hide_message.png) | ![Extract](screenshots/extract_message.png) | ![Output](screenshots/output_image.png) |
 
-#Screenshots
-![Original Image](https://github.com/user-attachments/assets/cf228502-c07f-40fc-8734-ffddb91e1978)
-![encoded_image](https://github.com/user-attachments/assets/e9228ca0-a271-4db2-9e66-b1e3ffb8a3b2)
-![Interface](https://github.com/user-attachments/assets/9e9eaec9-1a0c-46e2-ad65-0ae0dcb1ce78)
-![Encrypting](https://github.com/user-attachments/assets/d0c5ab10-7458-4240-b816-369e1062aee4)
-![Decrypting](https://github.com/user-attachments/assets/c59dc34f-4b15-4d8d-8839-195ac88c6f84)
+## Future Scope
+- **Support for More File Types** – Extending beyond images to hide messages in audio/video files.
+- **AI-Powered Steganography** – Implementing machine learning to improve undetectability.
+- **Encryption Layer** – Adding encryption before hiding the message for extra security.
+- **Web Deployment** – Hosting the tool online for easy accessibility.
 
+## Conclusion
+This project provides a **simple yet effective solution for secure communication** using image steganography. By combining an intuitive interface with powerful backend logic, it ensures that sensitive information remains hidden in plain sight.
 
-#Future Enhancements
--Support for Multiple file types (Video, audio, pdf, etc...)
--Cloud Integration.
--Mobile and Web app.
+---
+### 🚀 **Contributions & Feedback**
+Feel free to **fork**, **contribute**, or **suggest improvements** via pull requests or issues!
