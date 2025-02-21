@@ -32,14 +32,14 @@ GitHub - Version control
 
 #How to Run the Project
 
--Clone the repository
-git clone https://github.com/your-username/image-steganography.git
+-Clone the repository: -->
+git clone https://github.com/your-username/image-steganography.git -->
 cd image-steganography
 
--Install dependencies
+-Install dependencies:
 pip install opencv-python numpy pillow
 
--Run the Python script
+-Run the Python script:
 python app.py
 
 -Open the frontend in a browser and start encoding or decoding.
