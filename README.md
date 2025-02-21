@@ -1,4 +1,4 @@
-Image Steganography Tool
+**Image Steganography Tool**
 
 #Overview
 This project is a web-based image steganography tool that allows users to hide and extract secret messages within images. It provides a simple and secure way to encode confidential text inside an image without noticeable changes.
@@ -21,13 +21,13 @@ HTML, CSS, JavaScript
 Python
 
 -Libraries:
-OpenCV : Image processing
-NumPy : Handling image arrays
-PIL (Pillow) : Working with images
+OpenCV- Image processing
+NumPy- Handling image arrays
+PIL (Pillow)- Working with images
 
 -Tools & Platforms:
-VS Code / PyCharm - Development
-GitHub - Version control
+VS Code- Development
+GitHub- Version control
 
 
 #How to Run the Project
