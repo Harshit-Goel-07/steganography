@@ -14,18 +14,18 @@ This project is a web-based image steganography tool that allows users to hide a
 
 #Technologies Used
 
--Frontend
+-Frontend:
 HTML, CSS, JavaScript
 
--Backend
+-Backend:
 Python
 
--Libraries
+-Libraries:
 OpenCV : Image processing
 NumPy : Handling image arrays
 PIL (Pillow) : Working with images
 
--Tools & Platforms
+-Tools & Platforms:
 VS Code / PyCharm - Development
 GitHub - Version control
 
