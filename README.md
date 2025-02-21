@@ -22,13 +22,13 @@ This project is an **Image Steganography Tool** that allows users to **hide and 
 - HTML, CSS, JavaScript – For building a responsive web interface.
 
 ### **Platforms & Tools**
-- VS Code / PyCharm – For coding and testing.
+- VS Code – For coding and testing.
 - GitHub – Version control and project management.
 
 ## Installation & Usage
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/your-username/image-steganography-tool.git
+git clone https://github.com/Harshit-Goel-07/steganography.git
 cd image-steganography-tool
 ```
 
