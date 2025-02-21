@@ -1,4 +1,4 @@
-![encoded_image (3)](https://github.com/user-attachments/assets/c7544046-34d8-43ff-9be1-1ec63675ff4e)# Image Steganography Tool
+# Image Steganography Tool
 
 ## Overview
 This project is an **Image Steganography Tool** that allows users to **hide and retrieve secret messages within images**. Using Python for the backend and HTML, CSS, and JavaScript for the frontend, the tool provides a secure way to conceal information inside image pixels without visible changes.
@@ -46,13 +46,6 @@ python app.py
 ### **4. Open Frontend**
 Open `index.html` in a web browser to interact with the tool.
 
-## Screenshots
-| Hide Message | Extract Message | Encrypted Image |
-|-------------|---------------|-------------|
-| ![image](https://github.com/user-attachments/assets/848e8af9-1d85-4693-956a-207697a09f9a)
- | ![image](https://github.com/user-attachments/assets/e1aefe0a-b2b4-45f7-89b6-85910cec44be)
- | ![encoded_image (3)](https://github.com/user-attachments/assets/143ebc24-804a-46ca-bf44-d81192e8057b)
- |
 
 ## Future Scope
 - **Support for More File Types** – Extending beyond images to hide messages in audio/video files.
