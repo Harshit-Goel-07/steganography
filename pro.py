@@ -1,6 +1,4 @@
 import cv2
-import numpy as np
-from PIL import Image
 
 # Function to encode text into an image
 def encode_text(image_path, text, passkey=""):
