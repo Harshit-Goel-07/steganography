@@ -15,8 +15,6 @@ This project is an **Image Steganography Tool** that allows users to **hide and 
 
 ### **Libraries & Frameworks**
 - OpenCV – Image processing.
-- NumPy – Handling image data.
-- PIL (Pillow) – Image manipulation.
 
 ### **Frontend**
 - HTML, CSS, JavaScript – For building a responsive web interface.
