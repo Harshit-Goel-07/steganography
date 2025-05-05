@@ -12,7 +12,7 @@ async function handleEncryptionSubmit(event) {
   formData.append("image", imageInput);
   formData.append("text", textInput);
   formData.append("passkey", passkeyInput);
-  const res = await fetch("http://127.0.0.1:5000/encode", {
+  const res = await fetch("https://steganography-z1yi.onrender.com/encode", {
     method: "POST",
     body: formData,
   });
@@ -57,7 +57,7 @@ async function handleDecryptionSubmit(event) {
   formData.append("passkey", passkeyInput);
 
   try {
-    const res = await fetch("http://127.0.0.1:5000/decode", {
+    const res = await fetch("https://steganography-z1yi.onrender.com/decode", {
       method: "POST",
       body: formData,
     });
