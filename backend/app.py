@@ -5,7 +5,7 @@ from flask_cors import CORS
 from flask import Flask, request, send_file, jsonify
 
 app = Flask(__name__)
-CORS(app, origins=["https://steganography-mu.vercel.app"], methods=["GET", "POST"])
+CORS(app, resources={r"/*": {"origins": "https://steganography-mu.vercel.app"}})
 
 
 def encode_text(image_stream, text, passkey=""):
