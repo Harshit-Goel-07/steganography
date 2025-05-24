@@ -1,12 +1,27 @@
 import io
 import cv2
 import numpy as np
+import os
+from flask import Flask, request, send_file, jsonify, send_from_directory
 from flask_cors import CORS
-from flask import Flask, request, send_file, jsonify
 
-app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://steganography-mu.vercel.app", "methods": ["GET", "POST"]}})
+# Path to the frontend folder (adjusted for deployment)
+FRONTEND_FOLDER = os.path.abspath(os.path.join(os.path.dirname(__file__), '../frontend'))
 
+app = Flask(__name__, static_folder=FRONTEND_FOLDER, static_url_path='')
+CORS(app, resources={r"/*": {"origins": "*", "methods": ["GET", "POST"]}})
+
+# Serve frontend files
+@app.route('/')
+def serve_index():
+    return send_from_directory(FRONTEND_FOLDER, 'index.html')
+
+@app.route('/<path:path>')
+def serve_static(path):
+    file_path = os.path.join(FRONTEND_FOLDER, path)
+    if os.path.exists(file_path):
+        return send_from_directory(FRONTEND_FOLDER, path)
+    return send_from_directory(FRONTEND_FOLDER, 'index.html')  # For SPA routing fallback
 
 def encode_text(image_stream, text, passkey=""):
     if not text.strip():
@@ -33,7 +48,6 @@ def encode_text(image_stream, text, passkey=""):
 
     _, buffer = cv2.imencode('.png', img)
     return io.BytesIO(buffer), None
-
 
 def decode_text(image_stream, passkey=""):
     file_bytes = np.asarray(bytearray(image_stream.read()), dtype=np.uint8)
@@ -64,7 +78,6 @@ def decode_text(image_stream, passkey=""):
         return None, "This image is passkey-protected. Passkey required."
     return decoded, None
 
-
 @app.route("/encode", methods=["POST"])
 def api_encode():
     if "image" not in request.files or "text" not in request.form:
@@ -78,7 +91,6 @@ def api_encode():
         return jsonify({"error": err}), 400
     return send_file(encoded_io, mimetype="image/png", download_name="encoded.png")
 
-
 @app.route("/decode", methods=["POST"])
 def api_decode():
     if "image" not in request.files:
@@ -91,11 +103,9 @@ def api_decode():
         return jsonify({"error": err}), 400
     return jsonify({"text": text})
 
-
 @app.route("/health", methods=["GET"])
 def health_check():
     return jsonify({"status": "ok"}), 200
 
-
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
