@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: image-steganography
+    env: python
+    buildCommand: ""
+    startCommand: python backend/app.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
