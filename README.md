@@ -1,57 +1,135 @@
-# Image Steganography Tool
+# 🕵️‍♂️ Steganography Tool
 
-## Overview
-This project is an **Image Steganography Tool** that allows users to **hide and retrieve secret messages within images**. Using Python for the backend and HTML, CSS, and JavaScript for the frontend, the tool provides a secure way to conceal information inside image pixels without visible changes.
+A web-based steganography tool that allows you to **hide secret messages inside images** (encryption) and **extract hidden text** from images (decryption). The project uses **HTML, CSS (Tailwind), JavaScript for frontend**, and a **Flask + OpenCV-powered backend**.
 
-## Features
-- **Hide Messages** – Encode text within an image without altering its appearance.
-- **Extract Messages** – Retrieve the hidden text from a steganographic image.
-- **User-Friendly Interface** – A simple web-based frontend for ease of use.
-- **Secure Communication** – Enhances privacy by making messages invisible to unauthorized users.
-
-## Technologies Used
-### **Programming Language**
-- Python – For implementing the steganography logic.
-
-### **Libraries & Frameworks**
-- OpenCV – Image processing.
-
-### **Frontend**
-- HTML, CSS, JavaScript – For building a responsive web interface.
-
-### **Platforms & Tools**
-- VS Code – For coding and testing.
-- GitHub – Version control and project management.
-
-## Installation & Usage
-### **1. Clone the Repository**
-```bash
-git clone https://github.com/Harshit-Goel-07/steganography.git
-cd image-steganography-tool
-```
-
-### **2. Install Dependencies**
-Ensure you have Python installed, then install required libraries:
-```bash
-pip install opencv-python numpy pillow
-```
-
-### **3. Run the Backend**
-```bash
-python app.py
-```
-
-### **4. Open Frontend**
-Open `index.html` in a web browser to interact with the tool.
-
-
-## Future Scope
-- **Support for More File Types** – Extending beyond images to hide messages in audio/video files.
-- **Web Deployment** – Hosting the tool online for easy accessibility.
-
-## Conclusion
-This project provides a **simple yet effective solution for secure communication** using image steganography. By combining an intuitive interface with powerful backend logic, it ensures that sensitive information remains hidden in plain sight.
+> 🛡️ Optional passkey-based encryption for enhanced security.
 
 ---
-### 🚀 **Contributions & Feedback**
-Feel free to **fork**, **contribute**, or **suggest improvements** via pull requests or issues!
+
+## 🔗 Live Demo
+
+🚀 [Try the App](https://steganography-8mfr.onrender.com)
+
+---
+
+## 📸 Features
+
+* 🔐 Hide (encode) text inside image files securely.
+* 🧾 Extract (decode) text from images.
+* 🔑 Optional passkey support for added message protection.
+* 💻 Intuitive & responsive UI built using Tailwind CSS.
+* 📤 Download the image after encoding.
+* 🧠 Backend powered by Python, Flask, and OpenCV.
+
+---
+
+## 🧪 Technologies Used
+
+### Frontend
+
+* HTML5
+* Tailwind CSS
+* JavaScript (Vanilla)
+
+### Backend
+
+* Python
+* Flask
+* OpenCV
+* NumPy
+* CORS (Flask-CORS)
+
+---
+
+## 🛠️ Project Structure
+
+```
+📁 steganography-project/
+│
+├── 📁 frontend/
+│   ├── index.html
+│   ├── app.js
+│   └── styles (via Tailwind CDN)
+│
+├── 📁 backend/
+│   ├── main.py (Flask server)
+│   └── steganography_utils.py (encode/decode logic)
+│
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🧪 How It Works
+
+### 🔐 Encoding Process
+
+1. User uploads an image.
+2. User inputs the secret text.
+3. Optionally adds a passkey.
+4. Server encodes the message inside the image pixels.
+5. Encoded image is sent back for download.
+
+### 🔓 Decoding Process
+
+1. User uploads the stego-image.
+2. Optionally enters the passkey.
+3. Server extracts the hidden message.
+4. Decoded text is displayed to the user.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/steganography-project.git
+cd steganography-project
+```
+
+### 2. Backend Setup (Python)
+
+```bash
+cd backend
+pip install -r requirements.txt
+python main.py
+```
+
+### 3. Frontend
+
+Open `frontend/index.html` in your browser or serve using Python/Live Server.
+
+---
+
+## 📝 API Endpoints
+
+* `POST /encode`
+  → Accepts `image`, `text`, and optional `passkey` → Returns encoded image.
+
+* `POST /decode`
+  → Accepts `image` and optional `passkey` → Returns extracted text.
+
+---
+
+## 🧪 Example Use Cases
+
+* Hide secret messages inside memes.
+* Secure communication in images.
+* Educational projects related to cryptography/steganography.
+
+---
+
+## 🧑‍💻 Author
+
+**Harshit Goel**
+🌐 [Portfolio](#) | 📫 [harshitgoel.cs@gmail.com](mailto:harshitgoel.cs@gmail.com) | 🧑‍🎓 CSE Student at UPES, Dehradun
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
