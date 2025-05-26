@@ -124,7 +124,7 @@ Open `frontend/index.html` in your browser or serve using Python/Live Server.
 ## 🧑‍💻 Author
 
 **Harshit Goel**
-🌐 [Portfolio](#) | 📫 [harshitgoel.cs@gmail.com](mailto:harshitgoel.cs@gmail.com) | 🧑‍🎓 CSE Student at UPES, Dehradun
+| 📫 [goyalharshit2608@gmail.com](mailto:goyalharshit2608@gmail.com) | 🧑‍🎓 CSE Student at UPES, Dehradun
 
 ---
 
