@@ -53,7 +53,6 @@ A web-based steganography tool that allows you to **hide secret messages inside 
 │
 ├── 📁 backend/
 │   ├── main.py (Flask server)
-│   └── steganography_utils.py (encode/decode logic)
 │
 ├── requirements.txt
 └── README.md
