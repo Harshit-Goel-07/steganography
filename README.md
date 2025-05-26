@@ -126,9 +126,3 @@ Open `frontend/index.html` in your browser or serve using Python/Live Server.
 | 📫 [goyalharshit2608@gmail.com](mailto:goyalharshit2608@gmail.com) | 🧑‍🎓 CSE Student at UPES, Dehradun
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
