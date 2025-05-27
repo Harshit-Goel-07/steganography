@@ -52,7 +52,7 @@ A web-based steganography tool that allows you to **hide secret messages inside 
 │   └── styles (via Tailwind CDN)
 │
 ├── 📁 backend/
-│   ├── main.py (Flask server)
+│   ├── app.py (Flask server)
 │
 ├── requirements.txt
 └── README.md
@@ -93,7 +93,7 @@ cd steganography-project
 ```bash
 cd backend
 pip install -r requirements.txt
-python main.py
+python app.py
 ```
 
 ### 3. Frontend
